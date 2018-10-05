@@ -209,7 +209,7 @@ main {
   width: 150px;
   padding: 0.5rem;
   background-color: goldenrod;
-  border: 1px solid white;
+  border: none;
 }
 
 .section-3 .left-side button:hover {
@@ -284,7 +284,7 @@ footer .wrapper .signup form button {
   width: 100px;
   padding: 0.5rem;
   background-color: goldenrod;
-  border: 1px solid white;
+  border: none;
 }
 
 footer .wrapper .signup form button:hover {
@@ -305,6 +305,10 @@ footer .wrapper .signup form button:hover {
   letter-spacing: 0.1rem;
   font-weight: 500;
   font-size: 0.8rem;
+}
+
+.carousel {
+  z-index: 0;
 }
 
 @media screen and (max-width: 768px) {
