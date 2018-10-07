@@ -19,7 +19,7 @@ body {
 header {
   display: grid;
   justify-content: center;
-  background-color: white;
+  background-color: #ccc;
 }
 
 header .social {
@@ -241,6 +241,14 @@ footer .wrapper .social i {
   padding-right: 1.5rem;
 }
 
+.social a {
+  color: white;
+}
+
+.social a:hover {
+  color: goldenrod;
+}
+
 footer .footer {
   margin: 0;
   padding: 0;
@@ -317,6 +325,10 @@ footer .wrapper .signup form button:hover {
     background: cover;
   }
 
+  header.show {
+    display: none;
+  }
+
   .inner-content {
     width: 200px;
   }
@@ -352,10 +364,6 @@ footer .wrapper .signup form button:hover {
     font-size: 1.5rem;
     top: 10px;
     left: 15px;
-  }
-
-  header.show {
-    display: none;
   }
 
   header .navbar {
