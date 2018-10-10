@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
 
@@ -22,22 +23,20 @@
     <div class="menu-btn">☰</div>
   </div>
   <header class="show">
-    <div class="brand"><a href="/"><img src="https://via.placeholder.com/100x100" alt="logo"></a></div>
-    <ul class="navbar">
-      <li class="active">Home</li>
-      <li>Pages</li>
-      <li>Elements</li>
-      <li>Portfolio</li>
-      <li>Blog</li>
-      <li>Shop</li>
-    </ul>
-    <div class="social">
-      <a href="https://www.facebook.com/vaidehibeautycare"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://www.instagram.com/vaidehi_beauty_care"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
-      <a href="https://www.pinterest.com"><i class="fab fa-pinterest"></i></a>
+    <div class="logo">
+      <a href="#">
+        <img src="https://via.placeholder.com/100x100" alt="logo">
+      </a>
     </div>
+    <nav>
+      <ul class="navbar">
+        <li class="nav-item"><a href="#">Home</a></li>
+        <li class="nav-item"><a href="#services"> Services</a></li>
+        <li class="nav-item"><a href="#bridal">Bridal</a></li>
+        <li class="nav-item"><a href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a href="#about">About</a></li>
+      </ul>
+    </nav>
   </header>
   <!--Carousel Wrapper-->
   <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
@@ -96,15 +95,18 @@
     <!--/.Controls-->
   </div>
   <!--/.Carousel Wrapper-->
-  <main>
-    <section class="section-1">
-      <div class="inner-content">
-        <h1>Face and Body Care<span class="line"></span></h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, itaque. Beatae adipisci ab sequi eum. At
+
+  <section id="services">
+    <div class="wrapper">
+      <div class="services__title">
+        <h1 class="services__title-heading">Face and Body Care</h1>
+        <hr>
+        <p class="services__title-subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, itaque.
+          Beatae adipisci ab sequi eum. At
           neque
           consequatur molestias id?</p>
       </div>
-      <div class="modules">
+      <div class="services__module">
         <div class="box">
           <img src="https://via.placeholder.com/250x250" alt="">
           <h2>Face Peeling</h2>
@@ -142,12 +144,31 @@
           <p class="read-more">READ MORE <i class="fas fa-greater-than"></i></p>
         </div>
       </div>
-    </section>
-  </main>
-  <section class="section-2">
+    </div>
+  </section>
+
+  <section id="bridal">
+    <div class="wrapper">
+      <div class="left-side">
+        <h1>Bridal Treatment</h1>
+        <span class="line"></span>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis quibusdam consequatur itaque deleniti
+          non!
+          Reprehenderit voluptate impedit iure. Ut cum dolore possimus porro iure, error corrupti explicabo velit magni
+          hic expedita. Nesciunt sunt excepturi id ex accusantium eum, iste cumque animi repellendus, eos, esse
+          reiciendis odit commodi facere praesentium corporis.
+        </p>
+        <button>Learn More</button>
+      </div>
+      <div class="right-side">
+        <img src="img/iceage.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
     <div class="wrapper">
       <div class="left-side"><img src="https://source.unsplash.com/1400x1000/?makeup" alt=""></div>
-
       <div class="right-side">
         <div class="accordion" id="accordionExample">
           <div class="card">
@@ -214,43 +235,20 @@
         </div>
       </div>
     </div>
-    <!-- <div class="gallery-wrap">
-      <div class="item item-1"></div>
-      <div class="item item-2"></div>
-      <div class="item item-3"></div>
-      <div class="item item-4"></div>
-      <div class="item item-5"></div>
-    </div> -->
   </section>
 
-  <section class="section-3">
-    <div class="wrapper">
-      <div class="left-side">
-        <h1>Bridal Treatment</h1>
-        <span class="line"></span>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis quibusdam consequatur itaque deleniti
-          non!
-          Reprehenderit voluptate impedit iure. Ut cum dolore possimus porro iure, error corrupti explicabo velit magni
-          hic expedita. Nesciunt sunt excepturi id ex accusantium eum, iste cumque animi repellendus, eos, esse
-          reiciendis odit commodi facere praesentium corporis.
-        </p>
-        <button>Learn More</button>
-      </div>
-      <div class="right-side">
-        <img src="img/iceage.jpg" alt="">
-      </div>
-    </div>
-
-  </section>
-  <footer>
+  <footer id="about">
     <div class="wrapper">
       <div class="info">
         <p class="title">About Us<span class="line"></span></p>
         <img src="https://via.placeholder.com/100x100" alt="logo">
-        <p><i class="fas fa-phone fa-rotate-90"></i> +91 98254-11321</p>
-        <p><i class="fas fa-map-marker-alt"></i> 1st Floor, Viharika Complex, Ankur Cross Roads, Naranpura, Ahmedabad,
-          Gujarat 380013, India</p>
-        <p><i class="fas fa-envelope"></i> vaidehibeautycare@gmail.com</p>
+        <address>
+          <i class="fas fa-map-marker-alt"></i> 1st Floor, Viharika Complex, Ankur Cross Roads, Naranpura,
+          Ahmedabad,
+          Gujarat 380013, India
+        </address>
+        <p><i class="fas fa-phone fa-rotate-90"></i><a href="tel:+919825411321"> +91 98254-11321</a></p>
+        <p><i class="fas fa-envelope"></i><a href="mailto:vaidehibeautycare@gmail.com"> vaidehibeautycare@gmail.com</a></p>
         <div class="social">
           <a href="https://www.facebook.com/vaidehibeautycare" target="_blank"><i class="fab fa-facebook-f"></i></a>
           <a href="https://www.instagram.com/vaidehi_beauty_care" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -266,7 +264,7 @@
       </div>
       <div class="facebook-feed">
         <p class="title">Facebook Feed<span class="line"></span></p>
-        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fvaidehibeautycarenspa&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId"
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fvaidehibeautycarenspa&tabs=timeline&width=302&height=500&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId"
           width="100%" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
           allowTransparency="true" allow="encrypted-media"></iframe>
       </div>

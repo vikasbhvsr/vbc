@@ -1,18 +1,18 @@
 // FIXED NAVBAR //
-// When the user scrolls the page, execute myFunction 
-window.onscroll = function () {
-  myFunction()
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {
+  myFunction();
 };
 // Get the header
-var navbar = document.querySelector(".navbar");
+var nav = document.querySelector("nav");
 // Get the offset position of the navbar
-var sticky = navbar.offsetTop;
+var sticky = nav.offsetTop;
 // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
   if (window.pageYOffset > sticky) {
-    navbar.classList.add("sticky");
+    nav.classList.add("sticky-nav");
   } else {
-    navbar.classList.remove("sticky");
+    nav.classList.remove("sticky-nav");
   }
 }
 
