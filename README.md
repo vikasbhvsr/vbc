@@ -1,3 +1,3 @@
-# https://vaidehibeautycare.com.com
+# https://vaidehibeautycare.com
 
 Vaidehi Beauty Care
