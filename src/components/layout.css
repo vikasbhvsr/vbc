@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #ddd;
+}
+
+a:hover {
+  color: palevioletred;
+}
+
+@font-face {
+  font-family: "Quentin";
+  src: url("../fonts/Quentin.ttf") format("truetype");
+}
