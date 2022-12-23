@@ -27,7 +27,7 @@ export default function Nav() {
   return (
     <header>
       <div
-        className={`fixed inset-x-0 z-50 px-4 ${isSticky ? 'shadow-lg nav-blur' : ''
+        className={`fixed inset-x-0 z-50 px-4 ${isSticky ? 'shadow-lg backdrop-blur-lg' : ''
           }`}
       >
         <div className='container mx-auto py-4 border-b border-opacity-25 border-white text-gray-900'>
