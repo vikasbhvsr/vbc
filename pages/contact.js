@@ -11,7 +11,7 @@ export default function Contact() {
       </Head>
       <Subheader
         title='Contact Us'
-        image='/../public/images/iStock-1216212413.jpg'
+        image='/images/iStock-1216212413.jpg'
       />
       <section className='py-12 px-4'>
         <div className='container mx-auto'>

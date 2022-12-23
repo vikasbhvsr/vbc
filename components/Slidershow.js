@@ -36,12 +36,12 @@ export default function Slideshow(props) {
   ]);
 
   const images = [
-    '/../public/images/bride-3.jpg',
-    '/../public/images/bride.jpg',
-    '/../public/images/bride-2.jpg',
-    '/../public/images/bride-1.jpg',
-    '/../public/images/bride-4.jpg',
-    '/../public/images/bride-5.jpg',
+    '/images/bride-3.jpg',
+    '/images/bride.jpg',
+    '/images/bride-2.jpg',
+    '/images/bride-1.jpg',
+    '/images/bride-4.jpg',
+    '/images/bride-5.jpg',
   ];
 
   return (
@@ -58,7 +58,8 @@ export default function Slideshow(props) {
             layout='fill'
           ></Image>
         </div>
-      ))}
+      ))
+      }
       <div className='container absolute inset-0 z-10 flex flex-col items-start justify-center px-4 mx-auto space-y-6'>
         <h1 className='text-4xl italic font-bold md:text-6xl'>
           Look Good, Feel Better
@@ -74,6 +75,6 @@ export default function Slideshow(props) {
           </a>
         </Link>
       </div>
-    </div>
+    </div >
   );
 }

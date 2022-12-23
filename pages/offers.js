@@ -11,7 +11,7 @@ export default function Offers() {
       </Head>
       <Subheader
         title='Offers'
-        image='/../public/images/iStock-1055421508.jpg'
+        image='/images/iStock-1055421508.jpg'
       />
       <section className='py-12 px-4'>
         <div className='container mx-auto'>

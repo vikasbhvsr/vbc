@@ -9,7 +9,7 @@ export default function Gallery() {
         <title>Gallery | Vaidehi Beauty Care</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <Subheader title='Gallery' image='/../public/images/makeup-kit.jpg' />
+      <Subheader title='Gallery' image='/images/makeup-kit.jpg' />
       <section className='py-12 px-4'>
         <div className='container mx-auto'>
           Coming Soon

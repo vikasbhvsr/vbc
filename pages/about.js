@@ -11,7 +11,7 @@ export default function About() {
       </Head>
       <Subheader
         title='About Us'
-        image='/../public/images/iStock-503533810.jpg'
+        image='/images/iStock-503533810.jpg'
       />
       <section className='py-12 px-4'>
         <div className='container mx-auto'>
