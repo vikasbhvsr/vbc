@@ -37,10 +37,10 @@ export default function Slideshow(props) {
 
   const images = [
     '/images/bride-3.jpg',
+    '/images/bride-4.jpg',
+    '/images/bride-1.jpg',
     '/images/bride.jpg',
     '/images/bride-2.jpg',
-    '/images/bride-1.jpg',
-    '/images/bride-4.jpg',
     '/images/bride-5.jpg',
   ];
 
