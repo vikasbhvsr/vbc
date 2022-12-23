@@ -1,5 +1,1 @@
-module.exports = {
-  env: {
-    APIKEY: 'my-value',
-  },
-};
+module.exports = {};
