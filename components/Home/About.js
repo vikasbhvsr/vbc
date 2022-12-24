@@ -19,10 +19,8 @@ export default function About() {
           key to success is client's happiness. Visit Vaidehi Beauty Care and
           experience the difference.
         </p>
-        <Link href='/about'>
-          <a className='inline-block px-4 py-2 mx-auto text-base font-semibold text-white duration-100 transform bg-pink-800 rounded md:text-lg transistion hover:bg-pink-700 focus:scale-95'>
-            Read More
-          </a>
+        <Link href='/about' className='inline-block px-4 py-2 mx-auto text-base font-semibold text-white duration-100 transform bg-pink-800 rounded md:text-lg transistion hover:bg-pink-700 focus:scale-95'>
+          Read More
         </Link>
       </div>
     </section>

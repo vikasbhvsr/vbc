@@ -7,7 +7,6 @@ export default function Home() {
     <>
       <Head>
         <title>Vaidehi Beauty Care</title>
-        <link rel='icon' href='/favicon.ico' />
       </Head>
       <Slideshow />
       <About />

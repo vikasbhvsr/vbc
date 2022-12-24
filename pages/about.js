@@ -7,7 +7,6 @@ export default function About() {
     <>
       <Head>
         <title>About | Vaidehi Beauty Care</title>
-        <link rel='icon' href='/favicon.ico' />
       </Head>
       <Subheader
         title='About Us'

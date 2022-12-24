@@ -7,7 +7,6 @@ export default function Contact() {
     <>
       <Head>
         <title>Contact | Vaidehi Beauty Care</title>
-        <link rel='icon' href='/favicon.ico' />
       </Head>
       <Subheader
         title='Contact Us'

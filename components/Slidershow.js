@@ -69,10 +69,8 @@ export default function Slideshow(props) {
           lovely ladies in Ahmedabad since 1991. We provide Laser Treatment,
           Hair Removal Services, Facial, Bridal and many more.
         </p>
-        <Link href='/services'>
-          <a className='px-4 py-2 text-base font-semibold text-pink-800 duration-100 transform bg-white rounded md:text-lg transistion hover:bg-pink-100 focus:scale-95'>
-            Learn More
-          </a>
+        <Link href='/services' className='px-4 py-2 text-base font-semibold text-pink-800 duration-100 transform bg-white rounded md:text-lg transistion hover:bg-pink-100 focus:scale-95'>
+          Learn More
         </Link>
       </div>
     </div >

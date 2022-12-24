@@ -6,7 +6,6 @@ export default function Services() {
     <>
       <Head>
         <title>Services | Vaidehi Beauty Care</title>
-        <link rel='icon' href='/favicon.ico' />
       </Head>
       <Subheader
         title='Services'
