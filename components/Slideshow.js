@@ -55,7 +55,8 @@ export default function Slideshow(props) {
           <Image
             className='absolute inset-0 object-cover object-center w-full h-full overflow-hidden'
             src={image}
-            layout='fill'
+            fill
+            alt={image}
           ></Image>
         </div>
       ))
