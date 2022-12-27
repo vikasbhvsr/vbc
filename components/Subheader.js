@@ -7,7 +7,7 @@ export default function Subheader({ className, ...props }) {
         className='absolute inset-0 w-full h-full overflow-hidden object-cover'
         src={props.image}
         alt='Header Image'
-        layout='fill'
+        fill
       />
       <div className='bg-gradient-to-t from-pink-500 via-pink-400 to-pink-300 opacity-50 absolute inset-0'></div>
       <div className='container mx-auto relative text-white'>
