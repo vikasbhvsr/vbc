@@ -33,7 +33,7 @@ export default function Nav() {
         <div className='container mx-auto py-4 border-b border-opacity-25 border-white text-gray-900'>
           <nav className='flex flex-wrap justify-between items-center nav'>
             <Link href='/'>
-              <h1 className='text-xl md:text-2xl font-extrabold uppercase tracking-widest text-center'>
+              <h1 className=' text-xl md:text-2xl font-extrabold uppercase tracking-widest text-center'>
                 Vaidehi
                 <span className='block text-xs tracking-wide'>
                   Beauty Care & Spa
@@ -57,7 +57,25 @@ export default function Nav() {
                 </li>
               ))}
             </ul>
-            <Social mode='light' size='' />
+            <div className='flex flex-row flex-wrap items-center space-x-4 md:hidden'>
+              <Social />
+              <button className='text-md p-1 -m-1 rounded-md hover:text-pink-800 focus:outline-none focus:text-pink-800 transition duration-300'>
+                <svg
+                  className='h-6 w-6'
+                  xmlns='http://www.w3.org/2000/svg'
+                  fill='none'
+                  viewBox='0 0 24 24'
+                  stroke='currentColor'
+                >
+                  <path
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth='2'
+                    d='M4 6h16M4 12h16M4 18h16'
+                  />
+                </svg>
+              </button>
+            </div>
           </nav>
         </div>
       </div>
