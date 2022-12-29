@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Social from './Social';
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
@@ -31,14 +32,21 @@ export default function Nav() {
         className={`fixed inset-x-0 z-50 px-4 ${isSticky ? 'shadow-lg backdrop-blur-lg' : ''}`}
       >
         <div className='container mx-auto py-4 border-b border-opacity-25 border-white text-gray-900'>
-          <nav className='flex flex-wrap justify-between items-center nav'>
+          <nav className='relative flex flex-wrap justify-between items-center nav'>
             <Link href='/'>
-              <h1 className=' text-xl md:text-2xl font-extrabold uppercase tracking-widest text-center'>
+              <Image
+                src='/vbc-logo.svg'
+                alt='Vaidehi Beauty Care logo'
+                width='120'
+                height='60'
+                className='object-contain w-24 sm:w-32'
+              />
+              {/* <h1 className=' text-xl md:text-2xl font-extrabold uppercase tracking-widest text-center'>
                 Vaidehi
                 <span className='block text-xs tracking-wide'>
                   Beauty Care & Spa
                 </span>
-              </h1>
+              </h1> */}
             </Link>
             <ul className='hidden md:flex flex-wrap space-x-2'>
               {navItems.map((navItem, index) => (
