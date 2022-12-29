@@ -31,7 +31,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     }}
                 />
             </Head>
-            <body className='antialiasing'>
+            <body className='antialiased text-slate-900'>
                 <noscript
                     dangerouslySetInnerHTML={{
                         __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MK2P3L2" height="0" width="0" style="display:none;visibility:hidden"></iframe>`,

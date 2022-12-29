@@ -31,7 +31,7 @@ export default function Nav() {
       <div
         className={`fixed inset-x-0 z-50 px-4 ${isSticky ? 'shadow-lg backdrop-blur-lg' : ''}`}
       >
-        <div className='container mx-auto py-4 border-b border-opacity-25 border-white text-gray-900'>
+        <div className='container mx-auto py-1 border-b border-opacity-25 border-white text-gray-900'>
           <nav className='relative flex flex-wrap justify-between items-center nav'>
             <Link href='/'>
               <Image
