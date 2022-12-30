@@ -8,12 +8,14 @@
     "start": "next start"
   },
   "dependencies": {
+    "@vercel/og": "^0.0.21",
     "eslint-config-next": "^13.1.0",
     "framer-motion": "^6.3.0",
     "keen-slider": "^6.8.5",
     "next": "^13.1.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-wrap-balancer": "^0.2.4"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",

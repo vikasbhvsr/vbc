@@ -5,7 +5,7 @@ export default function Social({ mode }) {
         < ul className={`inline-flex items-center space-x-4 ${mode === 'light' ? 'text-white' : 'text-black'}`}>
             {
                 socialPlatforms.map((socialPlatform, index) => (
-                    <li className={`transition duration-300 ${mode === 'light' ? '' : 'hover:text-pink-800'}`}>
+                    <li key={index} className={`transition duration-300 ${mode === 'light' ? '' : 'hover:text-pink-800'}`}>
                         <Link
                             href={socialPlatform.href}
                             title={socialPlatform.title}

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useKeenSlider } from 'keen-slider/react';
+import Balancer from 'react-wrap-balancer'
 import 'keen-slider/keen-slider.min.css';
 
 export default function Slideshow(props) {
@@ -66,9 +67,11 @@ export default function Slideshow(props) {
           Look Good, Feel Better
         </h1>
         <p className='max-w-xl text-lg md:leading-normal md:text-xl'>
-          Vaidehi Beauty Care &amp; Spa has been offering beauty services to the
-          lovely ladies in Ahmedabad since 1991. We provide Laser Treatment,
-          Hair Removal Services, Facial, Bridal and many more.
+          <Balancer>
+            Vaidehi Beauty Care &amp; Spa has been offering beauty services to the
+            lovely ladies in Ahmedabad since 1991. We provide Laser Treatment,
+            Hair Removal Services, Facial, Bridal and many more.
+          </Balancer>
         </p>
         <Link href='/services' className='px-4 py-2 text-base font-semibold text-pink-800 duration-100 transform bg-white rounded md:text-lg transistion hover:bg-pink-100 focus:scale-95'>
           Learn More
