@@ -7,6 +7,10 @@ export default function About() {
     <>
       <Head>
         <title>About | Vaidehi Beauty Care</title>
+        <meta
+          property="og:image"
+          content="https://www.vaidehibeautycare.com/api/og?title=About | Vaidehi Beauty Care"
+        />
       </Head>
       <Subheader
         title='About Us'

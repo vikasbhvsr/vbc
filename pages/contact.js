@@ -8,6 +8,10 @@ export default function Contact() {
     <>
       <Head>
         <title>Contact | Vaidehi Beauty Care</title>
+        <meta
+          property="og:image"
+          content="https://www.vaidehibeautycare.com/api/og?title=Contact | Vaidehi Beauty Care"
+        />
       </Head>
       <Subheader
         title='Contact Us'

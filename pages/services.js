@@ -6,6 +6,10 @@ export default function Services() {
     <>
       <Head>
         <title>Services | Vaidehi Beauty Care</title>
+        <meta
+          property="og:image"
+          content="https://www.vaidehibeautycare.com/api/og?title=Services | Vaidehi Beauty Care"
+        />
       </Head>
       <Subheader
         title='Services'

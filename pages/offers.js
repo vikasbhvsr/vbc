@@ -7,6 +7,10 @@ export default function Offers() {
     <>
       <Head>
         <title>Offers | Vaidehi Beauty Care</title>
+        <meta
+          property="og:image"
+          content="https://www.vaidehibeautycare.com/api/og?title=Offers | Vaidehi Beauty Care"
+        />
       </Head>
       <Subheader
         title='Offers'
