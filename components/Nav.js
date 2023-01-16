@@ -8,6 +8,7 @@ export default function Nav() {
   const router = useRouter();
 
   const [isSticky, setSticky] = useState(false);
+  const [mobileNavShown, setMobileNavShown] = useState(false);
 
   const handleScroll = () => {
     const offset = window.scrollY;
@@ -18,13 +19,18 @@ export default function Nav() {
     }
   };
 
+  const handleMobileNavShown = () => {
+    setMobileNavShown(!mobileNavShown);
+  }
+
   useEffect(() => {
+    router.events.on('routeChangeStart', handleMobileNavShown);
     window.addEventListener('scroll', handleScroll);
     return () => {
+      router.events.off('routeChangeStart', handleMobileNavShown);
       window.removeEventListener('scroll', () => handleScroll);
     };
-  }, []);
-
+  }, [mobileNavShown, router.asPath]);
 
   return (
     <header>
@@ -41,14 +47,8 @@ export default function Nav() {
                 height='60'
                 className='object-contain w-24 sm:w-32'
               />
-              {/* <h1 className=' text-xl md:text-2xl font-extrabold uppercase tracking-widest text-center'>
-                Vaidehi
-                <span className='block text-xs tracking-wide'>
-                  Beauty Care & Spa
-                </span>
-              </h1> */}
             </Link>
-            <ul className='hidden md:flex flex-wrap space-x-2'>
+            <ul className={`${mobileNavShown ? '' : 'hidden'} absolute top-16 left-0 right-0 bg-white rounded-md shadow-lg p-4 space-y-4 md:top-0 md:p-0 md:relative md:bg-transparent md:shadow-none md:flex md:flex-wrap md:space-y-0 md:space-x-2`}>
               {navItems.map((navItem, index) => (
                 <li key={index}>
                   <Link href={navItem.link}
@@ -67,27 +67,19 @@ export default function Nav() {
             </ul>
             <div className='flex flex-row flex-wrap items-center space-x-4 md:hidden'>
               <Social />
-              <button className='text-md p-1 -m-1 rounded-md hover:text-pink-800 focus:outline-none focus:text-pink-800 transition duration-300'>
-                <svg
-                  className='h-6 w-6'
-                  xmlns='http://www.w3.org/2000/svg'
-                  fill='none'
-                  viewBox='0 0 24 24'
-                  stroke='currentColor'
-                >
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    strokeWidth='2'
-                    d='M4 6h16M4 12h16M4 18h16'
-                  />
+              <button
+                onClick={handleMobileNavShown}
+                key={router.asPath}
+                className='text-md p-1 -m-1 rounded-md hover:text-pink-800 focus:outline-none focus:text-pink-800 transition duration-300'>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
               </button>
             </div>
           </nav>
         </div>
-      </div>
-    </header>
+      </div >
+    </header >
   );
 }
 

@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Social({ mode }) {
     return (
-        < ul className={`inline-flex items-center space-x-4 ${mode === 'light' ? 'text-white' : 'text-black'}`}>
+        <ul className={`inline-flex items-center space-x-4 ${mode === 'light' ? 'text-white' : 'text-black'}`}>
             {
                 socialPlatforms.map((socialPlatform, index) => (
                     <li key={index} className={`transition duration-300 ${mode === 'light' ? '' : 'hover:text-pink-800'}`}>
@@ -16,7 +16,7 @@ export default function Social({ mode }) {
                     </li>
                 ))
             }
-        </ul >
+        </ul>
     );
 }
 

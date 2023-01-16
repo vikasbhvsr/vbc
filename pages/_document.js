@@ -20,6 +20,8 @@ export default function Document() {
                 <meta property='twitter:description' content='Vaidehi Beauty Care & Spa has been offering beauty services to the lovely ladies in Ahmedabad since 1991. We provide Laser Treatment, Hair Removal Services, Facial, Bridal and many more' />
                 <meta property="twitter:image" content="https://www.vaidehibeautycare.com/api/og" />
 
+                <meta name="theme-color" content="#ec4899" />
+
                 <Script
                     id='google-tag-manager'
                     strategy='beforeInteractive'
