@@ -24,13 +24,13 @@ export default function Nav() {
   }
 
   useEffect(() => {
-    router.events.on('routeChangeStart', handleMobileNavShown);
+    router.events.on('routeChangeComplete', handleMobileNavShown);
     window.addEventListener('scroll', handleScroll);
     return () => {
-      router.events.off('routeChangeStart', handleMobileNavShown);
+      router.events.off('routeChangeComplete', handleMobileNavShown);
       window.removeEventListener('scroll', () => handleScroll);
     };
-  }, [mobileNavShown, router.asPath]);
+  }, [mobileNavShown]);
 
   return (
     <header>
@@ -39,7 +39,7 @@ export default function Nav() {
       >
         <div className='container mx-auto py-1 border-b border-opacity-25 border-white text-gray-900'>
           <nav className='relative flex flex-wrap justify-between items-center nav'>
-            <Link href='/'>
+            <a href='/'>
               <Image
                 src='/vbc-logo.svg'
                 alt='Vaidehi Beauty Care logo'
@@ -47,8 +47,8 @@ export default function Nav() {
                 height='60'
                 className='object-contain w-24 sm:w-32'
               />
-            </Link>
-            <ul className={`${mobileNavShown ? '' : 'hidden'} absolute top-16 left-0 right-0 bg-white rounded-md shadow-lg p-4 space-y-4 md:top-0 md:p-0 md:relative md:bg-transparent md:shadow-none md:flex md:flex-wrap md:space-y-0 md:space-x-2`}>
+            </a>
+            <ul className={`absolute top-16 left-0 right-0 bg-white rounded-md shadow-lg p-4 space-y-4 md:top-0 md:p-0 md:relative md:bg-transparent md:shadow-none md:flex md:flex-wrap md:space-y-0 md:space-x-2 ${mobileNavShown ? '' : 'hidden'}`}>
               {navItems.map((navItem, index) => (
                 <li key={index}>
                   <Link href={navItem.link}
