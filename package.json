@@ -10,7 +10,7 @@
   "dependencies": {
     "@vercel/og": "^0.0.21",
     "eslint-config-next": "^13.1.0",
-    "framer-motion": "^6.3.0",
+    "framer-motion": "^8.4.6",
     "keen-slider": "^6.8.5",
     "next": "^13.1.0",
     "react": "^18.2.0",
