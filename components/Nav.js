@@ -12,11 +12,7 @@ export default function Nav() {
 
   const handleScroll = () => {
     const offset = window.scrollY;
-    if (offset > 50) {
-      setSticky(true);
-    } else {
-      setSticky(false);
-    }
+    return offset > 50 ? setSticky(true) : setSticky(false);
   };
 
   const handleMobileNavShown = () => {
@@ -82,7 +78,7 @@ export default function Nav() {
             </div>
           </nav>
         </div>
-      </div >
+      </div>
     </header >
   );
 }
