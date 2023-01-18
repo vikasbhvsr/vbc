@@ -24,15 +24,15 @@ export default function Nav() {
   }
 
   useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
     if (!mobileNavShown) return;
     function handleRouteChange() {
       setMobileNavShown(false);
     }
     router.events.on('routeChangeComplete', handleRouteChange);
-    window.addEventListener('scroll', handleScroll);
     return () => {
-      router.events.off('routeChangeComplete', handleRouteChange);
       window.removeEventListener('scroll', () => handleScroll);
+      router.events.off('routeChangeComplete', handleRouteChange);
     };
   }, [router.asPath]);
 
