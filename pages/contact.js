@@ -40,7 +40,10 @@ export default function Contact() {
                       S8/S9, Viharika Complex<br />Near Ankur Cross Rd, Naranpura<br />Ahmedabad, Gujarat 380013
                     </address>
                   </Link>
-                  <Link className='text-pink-800 hover:text-pink-700 font-medium mt-2 block' href='https://goo.gl/maps/yteuBkuL5xWJ1zaDA' target='_blank'>Get Directions</Link>
+                  <div className='flex divide-x divide-pink-800 space-x-2'>
+                    <Link className='text-pink-800 hover:text-pink-700 font-medium mt-2 block' href='https://goo.gl/maps/yteuBkuL5xWJ1zaDA' target='_blank'>Get Directions</Link>
+                    <Link className='pl-2 text-pink-800 hover:text-pink-700 font-medium mt-2 block' href='#'>Book Appointment</Link>
+                  </div>
                 </div>
               </div>
               <div className='flex items-start gap-4'>
@@ -57,7 +60,10 @@ export default function Contact() {
                       A/4, FF17, Arya Villa<br />Anand Party Plot Rd, New Ranip<br />Ahmedabad, Gujarat 382470
                     </address>
                   </Link>
-                  <Link className='text-pink-800 hover:text-pink-700 font-medium mt-2 block' href='https://goo.gl/maps/uMN82PpdWJ4ZQnVT8' target='_blank'>Get Directions</Link>
+                  <div className='flex divide-x divide-pink-800 space-x-2'>
+                    <Link className='text-pink-800 hover:text-pink-700 font-medium mt-2 block' href='https://goo.gl/maps/uMN82PpdWJ4ZQnVT8' target='_blank'>Get Directions</Link>
+                    <Link className='pl-2 text-pink-800 hover:text-pink-700 font-medium mt-2 block' href='#'>Book Appointment</Link>
+                  </div>
                 </div>
               </div>
             </div>

@@ -26,7 +26,7 @@ export default function Footer() {
             Booking your Wellness and Beauty Care Day at our Salon and Spa is
             just a click away.
           </p>
-          <Link href='tel:+9825411321' title='Call us at 98254-11321' className='inline-block px-4 py-2 mx-auto text-base font-semibold text-pink-800 duration-100 transform bg-white rounded md:text-lg transistion hover:bg-pink-100 focus:scale-95'
+          <Link href='tel:+919825411321' title='Call us at 98254-11321' className='inline-block px-4 py-2 mx-auto text-base font-semibold text-pink-800 duration-100 transform bg-white rounded md:text-lg transistion hover:bg-pink-100 focus:scale-95'
           >
             Call Now!
           </Link>
@@ -40,26 +40,6 @@ export default function Footer() {
           <Social mode={'light'} />
         </div>
         <div className='mt-4 space-y-2 text-xs text-center'>
-          <ul className='inline-flex items-center space-x-2'>
-            <li>
-              Next.js{' '}
-              <span role='img' aria-label='Next.js'>
-                ▲
-              </span>
-            </li>
-            <li>
-              Tailwind CSS{' '}
-              <span role='img' aria-label='Tailwind CSS'>
-                🪁
-              </span>
-            </li>
-            <li>
-              Vercel{' '}
-              <span role='img' aria-label='Vercel'>
-                🖥
-              </span>
-            </li>
-          </ul>
           <p>
             Made with{' '}
             <span role='img' aria-label='Heart'>
