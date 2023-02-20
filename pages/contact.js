@@ -42,8 +42,7 @@ export default function Contact() {
                   </Link>
                   <div className='flex divide-x divide-pink-800 space-x-2'>
                     <Link className='text-pink-800 hover:text-pink-700 font-medium mt-2 block' href='https://goo.gl/maps/yteuBkuL5xWJ1zaDA' target='_blank'>Get Directions</Link>
-                    <Link className='pl-2 text-pink-800 hover:text-pink-700 font-medium mt-2 block' href='#'>Book Appointment</Link>
-                  </div>
+                    <Link className='pl-2 text-pink-800 hover:text-pink-700 font-medium mt-2 block' href='tel:+919825411321'>Call: +91 98254 11321</Link>                  </div>
                 </div>
               </div>
               <div className='flex items-start gap-4'>
@@ -62,7 +61,7 @@ export default function Contact() {
                   </Link>
                   <div className='flex divide-x divide-pink-800 space-x-2'>
                     <Link className='text-pink-800 hover:text-pink-700 font-medium mt-2 block' href='https://goo.gl/maps/uMN82PpdWJ4ZQnVT8' target='_blank'>Get Directions</Link>
-                    <Link className='pl-2 text-pink-800 hover:text-pink-700 font-medium mt-2 block' href='#'>Book Appointment</Link>
+                    <Link className='pl-2 text-pink-800 hover:text-pink-700 font-medium mt-2 block' href='tel:+919825411321'>Call: +91 98254 11321</Link>
                   </div>
                 </div>
               </div>
