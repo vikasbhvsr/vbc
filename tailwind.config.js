@@ -1,3 +1,5 @@
+const { fontFamily } = require('tailwindcss/defaultTheme')
+
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
@@ -7,9 +9,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'display': ['Avenir'],
-      'body': ['Avenir'],
-      'sans': ['Avenir']
+      sans: ['var(--font-mona-sans)', ...fontFamily.sans],
+      // sans: ['Avenir', ...fontFamily.sans]
     },
     extend: {},
   },

@@ -64,13 +64,11 @@ export default function Slideshow(props) {
       }
       <div className='container absolute inset-0 z-10 flex flex-col items-start justify-center px-4 mx-auto space-y-6'>
         <h1 className='text-4xl italic font-bold md:text-6xl'>
-          Look Good, Feel Better
+          Look Better, Feel Better
         </h1>
-        <p className='max-w-xl text-lg md:leading-normal md:text-xl'>
+        <p className='max-w-2xl text-lg md:leading-normal md:text-xl'>
           <Balancer>
-            Vaidehi Beauty Care &amp; Spa has been offering beauty services to the
-            lovely ladies in Ahmedabad since 1991. We provide Laser Treatment,
-            Hair Removal Services, Facial, Bridal and many more.
+            Vaidehi Beauty Care &amp; Spa has been offering beauty services to the lovely ladies in Ahmedabad since 1991. We provide Laser treatments for hair and skin, various other hair and skin treatments, Bridal services.
           </Balancer>
         </p>
         <Link href='/services' className='px-4 py-2 text-base font-semibold text-pink-800 duration-100 transform bg-white rounded md:text-lg transistion hover:bg-pink-100 focus:scale-95'>

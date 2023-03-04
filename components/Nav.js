@@ -52,7 +52,7 @@ export default function Nav() {
               {navItems.map((navItem, index) => (
                 <li key={index}>
                   <Link href={navItem.link}
-                    className={`text-md font-medium px-2 py-1 rounded-md transition transform duration-300 border-2 border-transparent hover:border-2 hover:border-pink-800 ${navItem.button
+                    className={`text-md inline-block font-medium px-2 py-1 rounded-md transition transform duration-300 border-2 border-transparent hover:border-2 hover:border-pink-800 ${navItem.button
                       ? 'bg-pink-800 text-white hover:text-white hover:bg-pink-700'
                       : 'hover:text-pink-800'
                       } ${router.pathname === `${navItem.link}`

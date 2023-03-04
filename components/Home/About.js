@@ -12,8 +12,8 @@ export default function About() {
         </h2>
         <p className='max-w-5xl mx-auto text-lg md:text-xl'>
           Hairstylist and Bridal Specialist, Deepa Bhavsar is an expert in
-          versatility and a master of her craft. She is self-taught and cerified
-          by biggest name in the industry, such as L'oreal, Georgio Kyot, Vidal
+          versatility and a master of her craft. She is self-taught and certified
+          by industry's renowned names, such as L'oreal, Georgiy Kot, Vidal
           Sassoon. Her unique, organic approach to beauty care allows her to
           create curated looks that highlight client's natural features. Deepa's
           key to success is client's happiness. Visit Vaidehi Beauty Care and
