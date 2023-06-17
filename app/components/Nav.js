@@ -1,8 +1,10 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
 import Social from './Social';
 import React, { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 
 export default function Nav() {

@@ -2,16 +2,13 @@ import Head from 'next/head';
 
 import Subheader from '../components/Subheader';
 
+export const metadata = {
+  title: 'About | Vaidehi Beauty Care',
+}
+
 export default function About() {
   return (
     <>
-      <Head>
-        <title>About | Vaidehi Beauty Care</title>
-        <meta
-          property="og:image"
-          content="https://www.vaidehibeautycare.com/api/og?title=About | Vaidehi Beauty Care"
-        />
-      </Head>
       <Subheader
         title='About Us'
         image='/images/iStock-503533810.jpg'

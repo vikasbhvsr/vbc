@@ -3,16 +3,13 @@ import Link from 'next/link';
 
 import Subheader from '../components/Subheader';
 
+export const metadata = {
+  title: 'Contact | Vaidehi Beauty Care',
+}
+
 export default function Contact() {
   return (
     <>
-      <Head>
-        <title>Contact | Vaidehi Beauty Care</title>
-        <meta
-          property="og:image"
-          content="https://www.vaidehibeautycare.com/api/og?title=Contact | Vaidehi Beauty Care"
-        />
-      </Head>
       <Subheader
         title='Contact Us'
         subtitle='Our friendly team is always here to help.'
