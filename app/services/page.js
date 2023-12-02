@@ -11,6 +11,7 @@ export default function Services() {
     <>
       <Subheader
         title='Services'
+        subtitle='We offer a wide range of services to help you achieve your beauty goals.'
         image='/images/makeup-brushes.jpg'
       />
       <section className='py-12 px-4'>

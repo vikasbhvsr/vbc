@@ -11,6 +11,7 @@ export default function About() {
     <>
       <Subheader
         title='About Us'
+        subtitle='We are a beauty salon located in the heart of the city. We offer a wide range of services, including haircuts, manicures, pedicures, and more.'
         image='/images/iStock-503533810.jpg'
       />
       <section className='py-12 px-4'>

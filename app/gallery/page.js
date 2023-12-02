@@ -9,7 +9,11 @@ export const metadata = {
 export default function Gallery() {
   return (
     <>
-      <Subheader title='Gallery' image='/images/makeup-kit.jpg' />
+      <Subheader
+        title='Gallery'
+        subtitle='Explore Our Craft: Where Beauty Comes to Life.'
+        image='/images/makeup-kit.jpg'
+      />
       <section className='py-12 px-4'>
         <div className='container mx-auto'>
           Coming Soon
