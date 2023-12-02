@@ -1,4 +1,5 @@
-import Head from 'next/head';
+import { Metadata } from 'next';
+
 import Subheader from '../components/Subheader';
 
 export const metadata = {
